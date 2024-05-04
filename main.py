@@ -1,10 +1,7 @@
-import json
-
 from dotenv import load_dotenv
 import os
 import base64
 from requests import post, get
-import pprint
 
 load_dotenv()
 
@@ -38,7 +35,7 @@ def search_for_artist(token, artist_name):
         return None
     url = "https://api.spotify.com/v1/search?"
     headers = get_auth_header(token)
-    query = f"q={artist_name}&type=artist&limit=10"
+    query = f"q={artist_name}&type=artist&limit=100"
 
     query_url = url + query
     result = get(query_url, headers=headers)
