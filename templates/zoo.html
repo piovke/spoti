@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/zoostyle.css') }}">
+</head>
+<body>
+    <div id="container">
+        {% for song in data %}
+        <div id="song">
+            <svg>
+                <path id="curve" d="M 15 80 q 135 -120 270 0" />
+                <text>
+                    <textPath xlink:href="#curve" textLength="300px" >
+                    {{song['title']}}
+                  </textPath>
+                </text>
+              </svg>
+    
+            <div id="animal-container">
+                <img src="{{url_for('static', filename=song['animal'])}}" id="animal" style="animation-duration: {{song['tempo']}}ms;">
+            </div>
+            <div id="cover-aritsts-container">
+                <div id="cover-board">
+                    <img src="{{song['image_url']}}" id="cover">
+                    <div id="cover-board-stick"></div>
+                </div>
+                <div id="fence">||=|=|=|=|=</div>
+                <div id="artists">
+                    <!-- <div id="artist-margin"></div> -->
+                    {{song['artists'][0]}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

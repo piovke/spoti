@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d075ce-4c9b-461c-bb91-7543f78a2452" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spoti costam.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="c9d075ce-4c9b-461c-bb91-7543f78a2452" name="Changes" comment="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <change afterPath="$PROJECT_DIR$/babacosgada.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/zoo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/top-songs-data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usersongsfr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +29,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="szukanie-artystow" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2g0hbA9V8talh9NdWkyxkcb9HFC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,17 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.baba cos gada.executor&quot;: &quot;Run&quot;,
+    &quot;Python.babacosgada.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user top songs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.usersongsfr.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\limek\Desktop\spoti\spoti costam\static\styles" />
       <recent name="C:\Users\limek\Desktop\spoti\spoti costam" />
     </key>
   </component>
@@ -71,9 +85,65 @@
       <option name="presentableId" value="Default" />
       <updated>1714840470520</updated>
     </task>
+    <task id="LOCAL-00001" summary="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <option name="closed" value="true" />
+      <created>1714852424906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852424906</updated>
+    </task>
+    <task id="LOCAL-00002" summary="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <option name="closed" value="true" />
+      <created>1714852516374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852516374</updated>
+    </task>
+    <task id="LOCAL-00003" summary="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <option name="closed" value="true" />
+      <created>1714852922213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852922213</updated>
+    </task>
+    <task id="LOCAL-00004" summary="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <option name="closed" value="true" />
+      <created>1714852952034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852952034</updated>
+    </task>
+    <task id="LOCAL-00005" summary="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
+      <option name="closed" value="true" />
+      <created>1714934898376</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714934898376</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba" />
+    <option name="LAST_COMMIT_MESSAGE" value="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/top-songs-data.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
