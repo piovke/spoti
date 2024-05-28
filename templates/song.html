@@ -6,14 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/zoostyle.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <style>
+        #song:hover{
+            background-color: rgba(0,0,0,0);
+        }
+    </style>
 </head>
 <body>
+{% with song = data %}
      <!-- <nav>
         lvoee you
     </nav> -->
-    <div id="container">
-        {% for song in data %}
-        <div id="song" onclick="goToSongDetails({{song['top']}})">
+    <div id="song-details-container">
+        <div id="song">
             <svg>
                 <path id="curve" d="M 15 80 q 135 -120 270 0" />
                 <text>
@@ -22,7 +27,7 @@
                   </textPath>
                 </text>
               </svg>
-    
+
             <div id="animal-container">
                 <img src="{{url_for('static', filename=song['animal'])}}" id="animal" style="animation-duration: {{song['tempo']}}ms;">
             </div>
@@ -37,7 +42,29 @@
                 </div>
             </div>
         </div>
+        <div id="song-details">
+            <section id='sd-top'>Your top <section>{{song['top']}}</section> song:</section>
+            <p id='sd-title'>{{song['title']}}</p>
+            <p id='sd-artists'>By:  
+                {%for a in song['artists']:%}
+                {{a}}{%if song['artists'][-1] != a %}{{','}}
+                {% endif %}
+                {% endfor %}
+            </p>
+          <!--<p id=''><a href={{song['url']}}>Listen on <img id='spoti' src={{url_for('static', filename='spotify.png')}}></a></p>--> 
+          <button id='spoti-button' onclick="songOnSpoti('{{song['url']}}')">
+            Listen on <img id='spoti' src={{url_for('static', filename='spotify.png')}}>
+        </button>
+        </div>
+    </div>
+    <div id='popularity' style="grid-template-rows:{{ 'auto ' * (song['popularity']//15) }};">
+        {% for i in range(song['popularity']) %}
+            {% if i % 5 == 0 or  i % 6 == 0: %}
+            <div id='v'></div>
+            {% endif %}
+            <div id='v'>{{i}}<img src="{{url_for('static', filename='nugget.png')}}" id='v'></div>
         {% endfor %}
     </div>
 </body>
+{% endwith %}
 </html>

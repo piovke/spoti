@@ -6,7 +6,7 @@ import base64
 
 app = Flask(__name__)
 
-app.config['SESSION_COOKIE_NAME'] = 'Spotify Cookie'
+# app.config['SESSION_COOKIE_NAME'] = 'Spotify Cookie'
 app.secret_key = '3948q*$)(W)j'
 
 load_dotenv()
@@ -72,6 +72,7 @@ def get_user_top_songs():
                 'artists': [artist['name'] for artist in song['artists']],
                 'popularity': song['popularity'],
                 'image_url': song['album']['images'][0]['url'],
+                'url': song['external_urls']['spotify'],
             }
         )
         top_songs_ids.append(song['id'])
@@ -131,6 +132,12 @@ def get_user_top_songs():
         else:
             song['animal'] = 'default'
 
+    session['top_info'] = top_songs_info
     return render_template('zoo.html', data=top_songs_info)
     # return top_songs_info
 
+
+@app.route('/song/<top>')
+def song_details(top):
+    song_info = session['top_info'][int(top) - 1]
+    return render_template('song.html', data=song_info)

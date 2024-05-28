@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d075ce-4c9b-461c-bb91-7543f78a2452" name="Changes" comment="wyszukiwanie artysow.&#10;szukasz sab&#10;dostajesz&#10;Sabrina Carpenter&#10;Sabaton&#10;Sabrina Claudio&#10;Saba">
-      <change afterPath="$PROJECT_DIR$/babacosgada.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/zoo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/top-songs-data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersongsfr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c9d075ce-4c9b-461c-bb91-7543f78a2452" name="Changes" comment="v1.0">
+      <change afterPath="$PROJECT_DIR$/templates/song.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tssgs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/zoostyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/zoostyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/zoo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/zoo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersongsfr.py" beforeDir="false" afterPath="$PROJECT_DIR$/usersongsfr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.baba cos gada.executor&quot;: &quot;Run&quot;,
-    &quot;Python.babacosgada.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.user top songs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.usersongsfr.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.baba cos gada.executor": "Run",
+    "Python.babacosgada.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.tssgs.executor": "Run",
+    "Python.user top songs.executor": "Run",
+    "Python.usersongsfr.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\limek\Desktop\spoti\spoti costam\static\styles" />
